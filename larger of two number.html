@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="a" placeholder="First Number">
+<input type="number" id="b" placeholder="Second Number">
+
+<button onclick="largest()">Find Largest</button>
+
+<p id="result"></p>
+
+<script>
+function largest() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+
+    if(a > b)
+        document.getElementById("result").innerHTML = a + " is Largest";
+    else
+        document.getElementById("result").innerHTML = b + " is Largest";
+}
+</script>
+
+</body>
+</html>

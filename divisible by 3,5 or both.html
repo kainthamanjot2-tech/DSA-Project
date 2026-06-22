@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="num">
+
+<button onclick="checkDiv()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function checkDiv() {
+    let num = Number(document.getElementById("num").value);
+
+    if(num % 3 == 0 && num % 5 == 0)
+        result.innerHTML = "Divisible by Both 3 and 5";
+    else if(num % 3 == 0)
+        result.innerHTML = "Divisible by 3";
+    else if(num % 5 == 0)
+        result.innerHTML = "Divisible by 5";
+    else
+        result.innerHTML = "Not Divisible";
+}
+</script>
+
+</body>
+</html>

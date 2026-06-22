@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="a">
+<input type="number" id="b">
+
+<button onclick="add()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="mul()">*</button>
+<button onclick="div()">/</button>
+
+<p id="result"></p>
+
+<script>
+function add() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    result.innerHTML = a + b;
+}
+
+function sub() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    result.innerHTML = a - b;
+}
+
+function mul() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    result.innerHTML = a * b;
+}
+
+function div() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    result.innerHTML = a / b;
+}
+</script>
+
+</body>
+</html>
